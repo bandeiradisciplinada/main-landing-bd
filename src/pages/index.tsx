@@ -12,23 +12,27 @@ import Product from '../components/Product';
 
 const App = () => {
   return (
-    <div className={`bg-background grid gap-y-16 overflow-hidden`}>
-      <div className={`relative bg-background`}>
+    <div className={`grid gap-y-16 overflow-hidden`}>
+      <div className={`relative`}>
         <div className="max-w-7xl mx-auto">
           <div
-            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
+            className={`relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
           >
             <Header />
             <MainHero />
           </div>
         </div>
         <MainHeroImage />
+        <Canvas
+          height={90}
+          waveHeight={600}
+          className="absolute bottom-0 w-full z-0 transform"
+        />
       </div>
-      <Canvas />
       <LazyShow>
         <>
           <Product />
-          <Canvas />
+          <Canvas height={100} />
         </>
       </LazyShow>
       <LazyShow>
@@ -39,8 +43,8 @@ const App = () => {
       </LazyShow> */}
       <LazyShow>
         <>
-          <Canvas />
           <About />
+          <Canvas />
         </>
       </LazyShow>
       <Analytics />

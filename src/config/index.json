@@ -16,11 +16,10 @@
       "name": "About",
       "href": "about"
     }
-
   ],
   "callToAction": {
     "text": "Get Started",
-    "href": "hi"
+    "href": "/contact"
   },
   "mainHero": {
     "title": "Making a Positive Impact with",
@@ -37,61 +36,150 @@
     }
   },
   "product": {
-    "title": "Bandeira Disciplinada",
+    "title": "Our Products",
     "items": [
       {
-        "title": "Expertise in AI",
-        "description": "With years of experience in the AI industry, our team of experts has the knowledge and expertise to deliver the best-in-class AI solutions. From machine learning to natural language processing, we have the skills to develop intelligent software solutions that meet your unique business needs.",
-        "img": "/assets/images/product1.svg"
+        "title": "JobJa",
+        "slug": "jobja",
+        "description": "JobJa is an AI-powered recruitment and career advancement platform designed to help users build professional, highly optimized resumes in minutes. It acts as a smart career assistant to bridge the gap between job seekers and their ideal roles.",
+        "website": "https://jobja.org",
+        "img": "/products/products-jobja.org.png",
+        "features": [
+          {
+            "title": "AI Resume Analysis & Optimization",
+            "description": "Uses advanced AI to analyze user content, provide tailored writing tips, and ensure resumes are highly compatible with Applicant Tracking Systems (ATS) like Greenhouse and Workday."
+          },
+          {
+            "title": "Smart Job Discovery",
+            "description": "Matches users with relevant job openings and allows for seamless export to major job boards like LinkedIn, Indeed, and Glassdoor."
+          },
+          {
+            "title": "Comprehensive Toolset",
+            "description": "Features drag-and-drop building, custom color themes, cover letter generation, and real-time auditing, all built on a privacy-first architecture."
+          }
+        ]
       },
       {
-        "title": "Customizable AI Solutions",
-        "description": "At Bandeira Disciplinada, we understand that every business has unique needs. That's why we offer customizable AI solutions tailored to meet your specific requirements. We work closely with you to understand your business goals and develop AI solutions that help you achieve them.",
-        "img": "/assets/images/product2.svg"
+        "title": "ZeroG",
+        "slug": "zerog",
+        "description": "ZeroG is a mobile educational application (available on iOS and Android) focused on optimizing the way people learn and memorize information. It is ideal for learning new languages or prepping for crucial exams.",
+        "website": "https://zerog.work",
+        "img": "/products/products-zerog.work.png",
+        "features": [
+          {
+            "title": "Spaced Repetition System (SRS)",
+            "description": "Utilizes scientifically proven spaced repetition algorithms to ensure long-term retention of information."
+          },
+          {
+            "title": "Gamified Learning",
+            "description": "Combines rigorous study techniques with engaging game mechanics to keep users motivated and prevent study fatigue."
+          }
+        ]
       },
       {
-        "title": "Quality Assurance",
-        "description": "We are committed to delivering high-quality solutions that meet industry standards. Our team follows a rigorous quality assurance process to ensure that your solution is bug-free and meets your expectations. We conduct thorough testing to ensure that your solution is functional, user-friendly, and scalable.",
-        "img": "/assets/images/product3.svg"
+        "title": "SubFlow",
+        "slug": "subflow",
+        "description": "SubFlow is a professional-grade, privacy-centric subtitle studio that allows creators to translate, edit, and refine video subtitles using local AI processing.",
+        "website": "https://subflow.work",
+        "img": "/products/products-subflow.work.png",
+        "features": [
+          {
+            "title": "100% Private & Local Processing",
+            "description": "Video files and data never leave the user's device. All AI processing happens directly within the browser, ensuring absolute security for sensitive content."
+          },
+          {
+            "title": "Advanced AI Integration",
+            "description": "Users can plug in their own API keys for top-tier models like Google Gemini, OpenAI, or Anthropic to generate highly accurate, context-aware translations in multiple languages."
+          },
+          {
+            "title": "Real-Time Workflow",
+            "description": "Offers instant subtitle previews over the video, smart refinement tools (to rephrase or shorten lines), and instant export to industry-standard formats like .SRT."
+          }
+        ]
       },
       {
-        "title": "Exceptional Customer Support",
-        "description": "Our commitment to customer satisfaction doesn't end with the delivery of your solution. We offer round-the-clock customer support to ensure that your solution runs smoothly and is updated regularly. Our team is always available to answer your queries, resolve issues, and provide ongoing support to ensure the success of your project.",
-        "img": "/assets/images/product4.svg"
-
+        "title": "Portugal Tools Hub",
+        "slug": "pthub",
+        "description": "Portugal Tools Hub is a comprehensive utility platform designed to simplify the financial and bureaucratic aspects of living and working in Portugal, catering to both locals and expats.",
+        "website": "https://pthub.me",
+        "img": "/products/products-pthub.me.png",
+        "features": [
+          {
+            "title": "Financial & Tax Calculators",
+            "description": "Includes highly accurate tools to calculate net salary (factoring in IRS and Social Security), estimate municipal property taxes (IMI), and plan for retirement."
+          },
+          {
+            "title": "Bureaucracy Management",
+            "description": "Features a real-time NIF (tax identification number) validator and an interactive Tax Calendar to help users track important Portuguese tax deadlines and VAT obligations."
+          }
+        ]
+      },
+      {
+        "title": "Namak",
+        "slug": "namak",
+        "description": "Namak is an all-in-one event management platform built to streamline the planning and execution of everything from intimate gatherings to large-scale events.",
+        "website": "https://namak.me",
+        "img": "/products/products-namak.me.png",
+        "features": [
+          {
+            "title": "End-to-End Event Coordination",
+            "description": "Features an intuitive interface for event creation, a smart booking system for managing capacity and waitlists, and comprehensive analytics to track attendance and revenue."
+          },
+          {
+            "title": "Food & Allergen Management",
+            "description": "A standout feature that allows organizers to manage catering menus while collecting and tracking detailed allergen information, ensuring guest safety."
+          },
+          {
+            "title": "Team Collaboration",
+            "description": "Enables organizers to assign roles, share responsibilities, and keep the entire event team synced on a mobile-friendly platform."
+          }
+        ]
       }
     ]
   },
   "features": {
-    "title": "What We Offer. ",
-    "subtitle": "Cutting-edge AI Technology",
-    "description": "Our team of experts is always up-to-date with the latest trends and technologies in the AI industry. We use cutting-edge AI technology to develop solutions that are not only functional but also visually appealing. From chatbots to predictive analytics, we incorporate the latest AI technology to make your solution stand out from the crowd.",
+    "title": "Why Choose Us?",
+    "subtitle": "Building for the Future",
+    "description": "Our products are built on a foundation of trust, innovation, and user-centric design. We don't just build software; we craft experiences that empower individuals and businesses to achieve more.",
     "items": [
       {
-        "name": "Natural Language Processing (NLP)",
-        "description": "Our team specializes in developing solutions that use NLP to analyze, interpret, and generate human language. This technology can help your business improve customer service, automate responses to frequently asked questions, and analyze customer feedback.",
-        "icon": "/assets/images/nlp.svg"
+        "name": "Privacy-First Architecture",
+        "description": "We prioritize your data security. Products like SubFlow operate entirely locally on your device, ensuring sensitive information never leaves your control.",
+        "icon": "/assets/images/compute-vision.svg"
       },
       {
-        "name": "Chatbots",
-        "description": "Our AI-powered chatbots can help your business automate customer service, sales, and marketing operations. We develop chatbots that can communicate with customers in a natural and intuitive way, providing them with personalized recommendations and support.",
+        "name": "User-Centric Design",
+        "description": "Every interaction is crafted with the user in mind. From JobJa's intuitive resume builder to Namak's seamless event management, we make complex tasks simple.",
         "icon": "/assets/images/chatbots.svg"
       },
       {
-        "name": "Predictive Analytics",
-        "description": "Our predictive analytics solutions use AI algorithms to analyze historical data and provide insights into future trends. This technology can help your business make data-driven decisions, anticipate customer needs, and optimize business operations.",
+        "name": "Cross-Industry Innovation",
+        "description": "We leverage AI to solve diverse problems across sectors—from education (ZeroG) to bureaucracy (Portugal Tools Hub), bringing fresh perspectives to old challenges.",
         "icon": "/assets/images/predictive-analytics.svg"
       },
       {
-        "name": "Computer Vision",
-        "description": "Our team develops computer vision solutions that use AI to interpret and analyze visual data. This technology can help your business improve quality control, automate tasks, and enhance customer experience. From object recognition to facial recognition, our computer vision solutions can add value to your business operations.",
-        "icon": "/assets/images/compute-vision.svg"
+        "name": "Verified Excellence",
+        "description": "Our solutions are rigorous and reliable. Whether it's accurate tax calculations or scientifically-backed study methods, you can trust our tools to perform.",
+        "icon": "/assets/images/nlp.svg"
       }
     ]
   },
 
   "about": {
-    "sections": [],
+    "sections": [
+      {
+        "title": "Open Source Contributions",
+        "description": "We are committed to advancing AI for the Portuguese language. Our team has built and published several key datasets, including 'portuguese-ocr-dataset' and 'portugues_ocr_dataset_full', which are widely used by the community to train AI models for reading Portuguese text."
+      },
+      {
+        "title": "Model Fine-Tuning",
+        "description": "To improve document digitization, we actively fine-tune TrOCR (Transformer-based Optical Character Recognition) models. We have released multiple versions of 0.3B parameter models, specifically optimized to accurately extract and read Portuguese text from images."
+      },
+      {
+        "title": "Applied AI Research",
+        "description": "We rigorously experiment with cutting-edge technologies. Our 'Spaces' such as Alpaca-LoRA and Banks demonstrate our expertise in fine-tuning Large Language Models (LLMs) using Low-Rank Adaptation (LoRA) and building robust AI applications."
+      }
+    ],
     "socialMedia": {
       "github": "https://github.com/bandeiradisciplinada"
     }

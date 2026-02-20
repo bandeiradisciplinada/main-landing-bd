@@ -10,6 +10,7 @@ const MainHeroImage = () => {
         className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full "
         src={mainHero.img}
         alt="happy team image"
+        style={{ clipPath: 'polygon(10% 0, 100% 0, 100% 100%, 0% 100%)' }}
       />
     </div>
   );

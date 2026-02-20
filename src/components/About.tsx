@@ -13,6 +13,27 @@ const About = () => {
       className="mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4 py-12"
     >
       <div className="flex flex-col items-center justify-center">
+        <div className="mb-12 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {about.sections &&
+              about.sections.map((section, index) => (
+                <div
+                  key={index}
+                  className="bg-background p-6 rounded-lg shadow-sm border border-gray-100"
+                >
+                  <h3 className="text-xl font-bold text-primary mb-3">
+                    {section.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {section.description}
+                  </p>
+                </div>
+              ))}
+          </div>
+        </div>
+
+        <div className="w-full border-t border-gray-200 my-8"></div>
+
         <div>
           <img src={logo} alt={companyName} className="w-16 h-16" />
         </div>

@@ -34,14 +34,12 @@ const Menu = () => {
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
                 <Link href="/">
-                  <a>
-                    <span className="sr-only">{companyName}</span>
-                    <img
-                      alt="logo"
-                      className="h-16 w-auto sm:h-16"
-                      src={logo}
-                    />
-                  </a>
+                  <span className="sr-only">{companyName}</span>
+                  <img
+                    alt="logo"
+                    className="h-16 w-auto sm:h-16 cursor-pointer"
+                    src={logo}
+                  />
                 </Link>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button
@@ -70,10 +68,12 @@ const Menu = () => {
                   );
                 }
                 return (
-                  <Link key={item.name} href={`/#${item.href}`}>
-                    <a className="font-medium text-gray-500 hover:text-gray-900">
-                      {item.name}
-                    </a>
+                  <Link
+                    key={item.name}
+                    href={`/#${item.href}`}
+                    className="font-medium text-gray-500 hover:text-gray-900"
+                  >
+                    {item.name}
                   </Link>
                 );
               })}
@@ -133,10 +133,12 @@ const Menu = () => {
                     );
                   }
                   return (
-                    <Link key={item.name} href={`/#${item.href}`}>
-                      <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                        {item.name}
-                      </a>
+                    <Link
+                      key={item.name}
+                      href={`/#${item.href}`}
+                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    >
+                      {item.name}
                     </Link>
                   );
                 })}

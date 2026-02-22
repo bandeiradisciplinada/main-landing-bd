@@ -7,10 +7,10 @@ const Product = () => {
   const { product } = config;
 
   return (
-    <section className={`bg-background py-8`} id="product">
+    <section className={`bg-background dark:bg-gray-900 py-8`} id="product">
       <div className={`container max-w-5xl mx-auto m-8`}>
         <h1
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
+          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary dark:text-white`}
         >
           {product.title.split(' ').map((word, index) => (
             <span
@@ -27,13 +27,13 @@ const Product = () => {
           if (index % 2 === 0) {
             return (
               <div className={`flex flex-wrap relative mb-16`} key={index}>
-                <div className={`w-5/6 sm:w-1/2 p-6 mt-5 relative z-10`}>
+                <div className={`w-full sm:w-1/2 p-6 mt-5 relative z-10 flex flex-col justify-center items-center sm:items-start text-center sm:text-left`}>
                   <h3
-                    className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
+                    className={`text-3xl text-gray-800 dark:text-gray-100 font-bold leading-none mb-3`}
                   >
                     {item?.title}
                   </h3>
-                  <p className={`text-gray-600 mb-4`}>{item?.description}</p>
+                  <p className={`text-gray-600 dark:text-gray-300 mb-4`}>{item?.description}</p>
                   <a
                     href={`/products/${item.slug}`}
                     className="text-primary font-bold hover:text-secondary transition-colors"
@@ -41,13 +41,20 @@ const Product = () => {
                     Learn More &rarr;
                   </a>
                 </div>
-                <div className={`w-full sm:w-1/2 pt-6 pr-6 relative z-10`}>
-                  <a href={`/products/${item.slug}`}>
+                <div className={`w-full sm:w-1/2 p-6 relative z-10 flex justify-center items-center`}>
+                  <a href={`/products/${item.slug}`} className="block mx-auto">
                     <img
-                      className="h-6/6 cursor-pointer hover:scale-105 transition-transform"
+                      className={`max-h-64 sm:max-h-full object-contain mx-auto cursor-pointer hover:scale-105 transition-transform${(item as any).imgDark ? ' dark:hidden' : ''}`}
                       src={item?.img}
                       alt={item?.title}
                     />
+                    {(item as any).imgDark && (
+                      <img
+                        className="max-h-64 sm:max-h-full object-contain mx-auto cursor-pointer hover:scale-105 transition-transform hidden dark:block"
+                        src={(item as any).imgDark}
+                        alt={item?.title}
+                      />
+                    )}
                   </a>
                 </div>
                 {shouldShowCanvas && (
@@ -66,30 +73,35 @@ const Product = () => {
               className={`flex flex-wrap flex-col-reverse sm:flex-row relative mb-16`}
               key={index}
             >
-              <div className={`w-full sm:w-1/2 pt-6 pl-6 relative z-10`}>
-                <a href={`/products/${item.slug}`}>
+              <div className={`w-full sm:w-1/2 p-6 relative z-10 flex justify-center items-center`}>
+                <a href={`/products/${item.slug}`} className="block mx-auto">
                   <img
-                    className="h-6/6 cursor-pointer hover:scale-105 transition-transform"
+                    className={`max-h-64 sm:max-h-full object-contain mx-auto cursor-pointer hover:scale-105 transition-transform${(item as any).imgDark ? ' dark:hidden' : ''}`}
                     src={item?.img}
                     alt={item?.title}
                   />
+                  {(item as any).imgDark && (
+                    <img
+                      className="max-h-64 sm:max-h-full object-contain mx-auto cursor-pointer hover:scale-105 transition-transform hidden dark:block"
+                      src={(item as any).imgDark}
+                      alt={item?.title}
+                    />
+                  )}
                 </a>
               </div>
-              <div className={`w-full sm:w-1/2 p-6 mt-5 relative z-10`}>
-                <div className={`align-middle`}>
-                  <h3
-                    className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
-                  >
-                    {item?.title}
-                  </h3>
-                  <p className={`text-gray-600 mb-4`}>{item?.description}</p>
-                  <a
-                    href={`/products/${item.slug}`}
-                    className="text-primary font-bold hover:text-secondary transition-colors"
-                  >
-                    Learn More &rarr;
-                  </a>
-                </div>
+              <div className={`w-full sm:w-1/2 p-6 mt-5 relative z-10 flex flex-col justify-center items-center sm:items-start text-center sm:text-left`}>
+                <h3
+                  className={`text-3xl text-gray-800 dark:text-gray-100 font-bold leading-none mb-3`}
+                >
+                  {item?.title}
+                </h3>
+                <p className={`text-gray-600 dark:text-gray-300 mb-4`}>{item?.description}</p>
+                <a
+                  href={`/products/${item.slug}`}
+                  className="text-primary font-bold hover:text-secondary transition-colors"
+                >
+                  Learn More &rarr;
+                </a>
               </div>
               {shouldShowCanvas && (
                 <Canvas

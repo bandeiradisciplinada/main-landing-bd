@@ -1,21 +1,43 @@
 @import 'tailwindcss';
 
-:root {
+@theme {
   --color-primary: #9f4ffe;
   --color-secondary: #5301b4;
-  --color-tertiaty: #99a0a3;
+  --color-tertiary: #99a0a3;
+  --color-border: #1a2e35;
+  --color-background: #ffffff;
+  
+  --animate-vote: vote 1s ease-in-out;
+
+  @keyframes vote {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-30deg);
+    }
+    75% {
+      transform: rotate(30deg);
+    }
+  }
 }
 
-a {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  color: var(--color-primary);
-  transition: border-color 0.2s;
-}
+@layer base {
+  body {
+    @apply bg-background dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+  }
 
-a:hover {
-  border-bottom: 2px solid #b91c1c; /* red-700 equivalent */
+  a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    transition: border-color 0.2s;
+  }
+
+  a:hover {
+    border-bottom: 2px solid #b91c1c; /* red-700 equivalent */
+  }
 }
 
 .space-box {

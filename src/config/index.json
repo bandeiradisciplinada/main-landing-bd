@@ -44,6 +44,7 @@
         "description": "JobJa is an AI-powered recruitment and career advancement platform designed to help users build professional, highly optimized resumes in minutes. It acts as a smart career assistant to bridge the gap between job seekers and their ideal roles.",
         "website": "https://jobja.org",
         "img": "/products/products-jobja.org.png",
+        "imgDark": "/products/products-jobja.org-dark.png",
         "features": [
           {
             "title": "AI Resume Analysis & Optimization",
@@ -103,6 +104,7 @@
         "description": "Portugal Tools Hub is a comprehensive utility platform designed to simplify the financial and bureaucratic aspects of living and working in Portugal, catering to both locals and expats.",
         "website": "https://pthub.me",
         "img": "/products/products-pthub.me.png",
+        "imgDark": "/products/products-pthub.me-dark.png",
         "features": [
           {
             "title": "Financial & Tax Calculators",

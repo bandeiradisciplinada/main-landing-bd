@@ -14,6 +14,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/runtime": "^7.28.6",
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.5",
     "framer-motion": "^5.0.0",

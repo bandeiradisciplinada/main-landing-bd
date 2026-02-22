@@ -1,0 +1,41 @@
+yarn run v1.22.22
+$ next build
+▲ Next.js 16.1.6 (Turbopack)
+
+  Running TypeScript ...
+  Creating an optimized production build ...
+Error: Cannot apply unknown utility class `text-base`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    [2m[at onInvalidCandidate (/Volumes/Mine/Projects/bandeiradisciplinada.com/node_modules/tailwindcss/dist/lib.js:21:1314)][0m
+    [2m[at Ee (/Volumes/Mine/Projects/bandeiradisciplinada.com/node_modules/tailwindcss/dist/lib.js:16:37066)][0m
+    [2m[at /Volumes/Mine/Projects/bandeiradisciplinada.com/node_modules/tailwindcss/dist/lib.js:21:355][0m
+    [2m[at Pr (/Volumes/Mine/Projects/bandeiradisciplinada.com/node_modules/tailwindcss/dist/lib.js:3:1733)][0m
+    [2m[at _ (/Volumes/Mine/Projects/bandeiradisciplinada.com/node_modules/tailwindcss/dist/lib.js:3:1377)][0m
+    [2m[at Te (/Volumes/Mine/Projects/bandeiradisciplinada.com/node_modules/tailwindcss/dist/lib.js:21:172)][0m
+    [2m[at pn (/Volumes/Mine/Projects/bandeiradisciplinada.com/node_modules/tailwindcss/dist/lib.js:38:294)][0m
+    [2m[at process.processTicksAndRejections (node:internal/process/task_queues:103:5)][0m
+    [2m[at async dn (/Volumes/Mine/Projects/bandeiradisciplinada.com/node_modules/tailwindcss/dist/lib.js:38:631)][0m
+    [2m[at async Xr (/Volumes/Mine/Projects/bandeiradisciplinada.com/node_modules/@tailwindcss/node/dist/index.js:10:3417)][0m
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./src/styles/main.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Volumes/Mine/Projects/bandeiradisciplinada.com/src/styles/main.css:1:1: Cannot apply unknown utility class `text-base`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at Input.error (node_modules/postcss/lib/input.js:135:16) [/Volumes/Mine/Projects/bandeiradisciplinada.com/.next/build/chunks/node_modules_fe693df6._.js:4651:22]
+    at Root.error (node_modules/postcss/lib/node.js:146:32) [/Volumes/Mine/Projects/bandeiradisciplinada.com/.next/build/chunks/node_modules_fe693df6._.js:928:38]
+    [at Object.Once (/Volumes/Mine/Projects/bandeiradisciplinada.com/node_modules/@tailwindcss/postcss/dist/index.js:10:6913)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    at async LazyResult.runAsync (node_modules/postcss/lib/lazy-result.js:293:11) [/Volumes/Mine/Projects/bandeiradisciplinada.com/.next/build/chunks/node_modules_fe693df6._.js:6206:21]
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [/Volumes/Mine/Projects/bandeiradisciplinada.com/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:172:36]
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [/Volumes/Mine/Projects/bandeiradisciplinada.com/.next/build/chunks/[root-of-the-server]__44695d76._.js:443:31]
+
+Import trace:
+  Browser:
+    ./src/styles/main.css
+    ./src/pages/_app.tsx
+
+
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [/Volumes/Mine/Projects/bandeiradisciplinada.com/.next/build/chunks/[root-of-the-server]__6d51cb5d._.js:172:36])
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [/Volumes/Mine/Projects/bandeiradisciplinada.com/.next/build/chunks/[root-of-the-server]__44695d76._.js:443:31])
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

@@ -28,7 +28,7 @@
     "img": "/assets/images/happyTeam.jpg",
     "primaryAction": {
       "text": "See How We Can Help You",
-      "href": "#"
+      "href": "/contact"
     },
     "secondaryAction": {
       "text": "Join Our AI Community",

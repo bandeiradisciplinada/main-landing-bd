@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { AppProps } from 'next/app';
 
 import Analytics from '../components/Analytics';
@@ -7,6 +8,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
     <Component {...pageProps} />
     <Analytics />
+    <SpeedInsights />
   </>
 );
 

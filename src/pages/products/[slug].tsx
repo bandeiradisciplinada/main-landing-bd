@@ -1,7 +1,5 @@
-import React from 'react';
-
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { NextSeo } from 'next-seo';
+import Head from 'next/head';
 
 import About from '../../components/About';
 import Canvas from '../../components/Canvas';
@@ -32,20 +30,14 @@ const ProductPage: React.FC<Props> = ({ product }) => {
 
   return (
     <div className="bg-background min-h-screen grid gap-y-16 overflow-hidden">
-      <NextSeo
-        title={`${product.title} | Bandeira Disciplinada`}
-        description={product.description}
-        openGraph={{
-          title: `${product.title} | Bandeira Disciplinada`,
-          description: product.description,
-          images: [
-            {
-              url: product.img,
-              alt: product.title,
-            },
-          ],
-        }}
-      />
+      <Head>
+        <title>{product.title} | Bandeira Disciplinada</title>
+        <meta name="description" content={product.description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content={`${product.title} | Bandeira Disciplinada`} />
+        <meta property="og:description" content={product.description} />
+        <meta property="og:image" content={product.img} />
+      </Head>
 
       <div className="relative bg-background">
         <div className="max-w-7xl mx-auto">

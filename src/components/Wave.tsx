@@ -12,8 +12,8 @@ const Wave: FC<WaveProps> = ({ height = 600 }) => {
   const { context, width: contextWidth } = useCanvasContext();
   const { width: responsiveWidth } = useResponsiveSize();
   const width = contextWidth || responsiveWidth;
-  const requestIdRef = useRef<number>();
-  const wavesRef = useRef<{ [key: string]: WaveObj }>();
+  const requestIdRef = useRef<number | undefined>(undefined);
+  const wavesRef = useRef<{ [key: string]: WaveObj } | undefined>(undefined);
   const frequencyRef = useRef(0.013);
 
   useEffect(() => {

@@ -1,7 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import 'tailwindcss';
 
 :root {
   --color-primary: #9f4ffe;
@@ -10,13 +7,15 @@
 }
 
 a {
-  @apply text-base font-medium text-primary  hover:border-b-2 hover:border-primary;
-
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  transition: border-color 0.2s;
 }
 
-
 a:hover {
-  @apply border-b-2 border-red-700;
+  border-bottom: 2px solid #b91c1c; /* red-700 equivalent */
 }
 
 .space-box {
@@ -61,9 +60,11 @@ a:hover {
 
 
 .content p {
-  @apply my-6;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .content ul {
-  @apply my-6;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }

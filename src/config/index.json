@@ -14,12 +14,16 @@
     },
     {
       "name": "About",
-      "href": "about"
+      "href": "/about"
+    },
+    {
+      "name": "Careers",
+      "href": "/careers"
     }
   ],
   "callToAction": {
-    "text": "Get Started",
-    "href": "/contact"
+    "text": "Book a Meeting",
+    "href": "https://calendar.app.google/3UFppN7UNRq4XjjJ8"
   },
   "mainHero": {
     "title": "Making a Positive Impact with",
@@ -27,12 +31,12 @@
     "description": "At BD, we believe that technology can be a powerful tool for improving people's lives. Our team of experts is dedicated to developing cutting-edge AI software solutions that solve real-world problems and make a positive impact on people's lives. From improving healthcare outcomes to streamlining daily tasks, we're committed to helping people live better lives through technology.",
     "img": "/assets/images/happyTeam.jpg",
     "primaryAction": {
-      "text": "See How We Can Help You",
-      "href": "/contact"
+      "text": "Book a Consultation",
+      "href": "https://calendar.app.google/3UFppN7UNRq4XjjJ8"
     },
     "secondaryAction": {
-      "text": "Join Our AI Community",
-      "href": "mailto:bandeiradisciplinada@gmail.com?subject=I Like your company!"
+      "text": "Partnership With Us",
+      "href": "mailto:partnership@bandeiradisciplinada.com?subject=Partnership%20Inquiry%3A%20Hello%2C%20I%20want%20to...&body=Hello%20Bandeira%20Disciplinada%20team%2C%0A%0AI%20am%20reaching%20out%20to%20discuss%20a%20potential%20partnership.%0A%0A1.%20Type%20of%20Partnership%20%28e.g.%2C%20Technology%20Integration%2C%20Co-Marketing%2C%20Strategic%20Alliance%2C%20Investor%29%3A%0A%5BInsert%20Partnership%20Type%5D%0A%0A2.%20Overview%20of%20the%20Proposal%3A%0A%5BBriefly%20describe%20what%20you%20are%20proposing%5D%0A%0A3.%20Mutual%20Benefits%3A%0A%5BExplain%20the%20synergies%20and%20how%20both%20parties%20will%20benefit%5D%0A%0A4.%20Next%20Steps%3A%0A%5Be.g.%2C%20I%20would%20love%20to%20schedule%20a%2015-minute%20call%20next%20week%20to%20discuss%20this%20further.%5D%0A%0ACompany%20Name%3A%20%5BYour%20Company%5D%0AWebsite%3A%20%5BYour%20Website%5D%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D"
     }
   },
   "product": {
@@ -45,6 +49,26 @@
         "website": "https://jobja.org",
         "img": "/products/products-jobja.org.png",
         "imgDark": "/products/products-jobja.org-dark.png",
+        "usersCount": "1,000+",
+        "calendarUrl": "https://calendar.app.google/fRTz3jmXSwMFWy6W7",
+        "investorPitch": "JobJa is rapidly acquiring users in the competitive career advancement space. We are seeking strategic partners and investors to accelerate marketing efforts and expand our B2B offerings for enterprise recruiters.",
+        "stack": [
+          "Go",
+          "NextJS",
+          "Python",
+          "Postgres",
+          "Docker",
+          "Kubernetes",
+          "Celery",
+          "Kafka",
+          "LLM",
+          "GC",
+          "Redis"
+        ],
+        "extraImages": [
+          "/assets/images/products/jobja/img1.jpg",
+          "/assets/images/products/jobja/img2.jpg"
+        ],
         "features": [
           {
             "title": "AI Resume Analysis & Optimization",
@@ -66,6 +90,29 @@
         "description": "ZeroG is a mobile educational application (available on iOS and Android) focused on optimizing the way people learn and memorize information. It is ideal for learning new languages or prepping for crucial exams.",
         "website": "https://zerog.work",
         "img": "/products/products-zerog.work.png",
+        "usersCount": "1,000+",
+        "calendarUrl": "https://calendar.app.google/aJ7NuDu5cybYjYt27",
+        "investorPitch": "ZeroG has demonstrated strong retention rates in the mobile education sector. We are looking for investment to scale our content libraries and penetrate international language-learning markets.",
+        "stack": [
+          "Flutter",
+          "Python",
+          "Django",
+          "Golang",
+          "Docker",
+          "Kubernetes",
+          "Celery",
+          "Redis",
+          "Postgres",
+          "AI",
+          "LLM"
+        ],
+        "extraImages": [
+          "/assets/images/products/zerog/img1.jpg",
+          "/assets/images/products/zerog/img2.jpg",
+          "/assets/images/products/zerog/img3.jpg",
+          "/assets/images/products/zerog/img4.jpg",
+          "/assets/images/products/zerog/img5.jpg"
+        ],
         "features": [
           {
             "title": "Spaced Repetition System (SRS)",
@@ -83,6 +130,17 @@
         "description": "SubFlow is a professional-grade, privacy-centric subtitle studio that allows creators to translate, edit, and refine video subtitles using local AI processing.",
         "website": "https://subflow.work",
         "img": "/products/products-subflow.work.png",
+        "usersCount": "1,000+",
+        "calendarUrl": "https://calendar.app.google/49R4NE2bQnXHjrQZA",
+        "investorPitch": "SubFlow targets the booming creator economy with a privacy-first approach. We are seeking partners to help integrate with major video platforms and expand our AI localization models.",
+        "stack": ["NextJS", "Wasm", "FFmpeg", "LLM", "AI"],
+        "extraImages": [
+          "/assets/images/products/subflow/img1.jpg",
+          "/assets/images/products/subflow/img2.jpg",
+          "/assets/images/products/subflow/img3.jpg",
+          "/assets/images/products/subflow/img4.jpg",
+          "/assets/images/products/subflow/img5.jpg"
+        ],
         "features": [
           {
             "title": "100% Private & Local Processing",
@@ -105,6 +163,29 @@
         "website": "https://pthub.me",
         "img": "/products/products-pthub.me.png",
         "imgDark": "/products/products-pthub.me-dark.png",
+        "usersCount": "1,000+",
+        "calendarUrl": "https://calendar.app.google/f3Fhjh7dbyEUS35x8",
+        "investorPitch": "Portugal Tools Hub addresses a critical pain point for the growing expat community in Portugal. We are seeking investment to develop premium B2B features for accounting and legal firms.",
+        "stack": [
+          "NextJS",
+          "Python",
+          "Django",
+          "Docker",
+          "Kubernetes",
+          "Celery",
+          "Redis",
+          "Postgres",
+          "AWS"
+        ],
+        "extraImages": [
+          "/assets/images/products/pthub/img1.jpg",
+          "/assets/images/products/pthub/img2.jpg",
+          "/assets/images/products/pthub/img3.jpg",
+          "/assets/images/products/pthub/img4.jpg",
+          "/assets/images/products/pthub/img5.jpg",
+          "/assets/images/products/pthub/img6.jpg",
+          "/assets/images/products/pthub/img7.jpg"
+        ],
         "features": [
           {
             "title": "Financial & Tax Calculators",
@@ -122,6 +203,26 @@
         "description": "Namak is an all-in-one event management platform built to streamline the planning and execution of everything from intimate gatherings to large-scale events.",
         "website": "https://namak.me",
         "img": "/products/products-namak.me.png",
+        "usersCount": "1,000+",
+        "calendarUrl": "https://calendar.app.google/X3Y9hVoK4wSS78hz9",
+        "investorPitch": "Namak modernizes event coordination with a focus on safety and scalability. We are looking for strategic partners in the hospitality industry to drive enterprise adoption.",
+        "stack": [
+          "NextJS",
+          "Python",
+          "Django",
+          "Docker",
+          "Kubernetes",
+          "Celery",
+          "Redis",
+          "Postgres",
+          "AWS"
+        ],
+        "extraImages": [
+          "/assets/images/products/namak/img1.jpg",
+          "/assets/images/products/namak/img2.jpg",
+          "/assets/images/products/namak/img3.jpg",
+          "/assets/images/products/namak/img4.jpg"
+        ],
         "features": [
           {
             "title": "End-to-End Event Coordination",
@@ -183,7 +284,10 @@
       }
     ],
     "socialMedia": {
-      "github": "https://github.com/bandeiradisciplinada"
+      "email": "contact@bandeiradisciplinada.com",
+      "github": "https://github.com/bandeiradisciplinada",
+      "facebook": "https://facebook.com/bandeiradisciplinada",
+      "instagram": "https://instagram.com/bandeiradisciplinada"
     }
   }
 }

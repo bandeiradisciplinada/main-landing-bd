@@ -1,119 +1,41 @@
-
-import Canvas from './Canvas';
 import Divider from './Divider';
+import ProductCard from './ProductCard';
 import config from '../config/index.json';
 
 const Product = () => {
   const { product } = config;
 
   return (
-    <section className={`bg-background dark:bg-gray-900 py-8`} id="product">
-      <div className={`container max-w-5xl mx-auto m-8`}>
-        <h1
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary dark:text-white`}
-        >
+    <section
+      className="bg-background dark:bg-[#09090b] py-16 relative overflow-hidden"
+      id="product"
+    >
+      {/* Decorative background glows */}
+      <div className="absolute top-40 -left-64 w-96 h-96 bg-primary/20 dark:bg-primary/10 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+      <div className="absolute bottom-40 -right-64 w-96 h-96 bg-secondary/20 dark:bg-secondary/10 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+        <h1 className="w-full my-4 text-5xl font-extrabold leading-tight text-center drop-shadow-sm">
           {product.title.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index % 2 ? 'text-primary' : 'text-border'}
+              className={
+                index % 2
+                  ? 'text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'
+                  : 'text-gray-900 dark:text-white'
+              }
             >
               {word}{' '}
             </span>
           ))}
         </h1>
         <Divider />
-        {product.items.map((item, index) => {
-          const shouldShowCanvas = index < product.items.length - 2;
-          if (index % 2 === 0) {
-            return (
-              <div className={`flex flex-wrap relative mb-16`} key={index}>
-                <div className={`w-full sm:w-1/2 p-6 mt-5 relative z-10 flex flex-col justify-center items-center sm:items-start text-center sm:text-left`}>
-                  <h3
-                    className={`text-3xl text-gray-800 dark:text-gray-100 font-bold leading-none mb-3`}
-                  >
-                    {item?.title}
-                  </h3>
-                  <p className={`text-gray-600 dark:text-gray-300 mb-4`}>{item?.description}</p>
-                  <a
-                    href={`/products/${item.slug}`}
-                    className="text-primary font-bold hover:text-secondary transition-colors"
-                  >
-                    Learn More &rarr;
-                  </a>
-                </div>
-                <div className={`w-full sm:w-1/2 p-6 relative z-10 flex justify-center items-center`}>
-                  <a href={`/products/${item.slug}`} className="block mx-auto">
-                    <img
-                      className={`max-h-64 sm:max-h-full object-contain mx-auto cursor-pointer hover:scale-105 transition-transform${(item as any).imgDark ? ' dark:hidden' : ''}`}
-                      src={item?.img}
-                      alt={item?.title}
-                    />
-                    {(item as any).imgDark && (
-                      <img
-                        className="max-h-64 sm:max-h-full object-contain mx-auto cursor-pointer hover:scale-105 transition-transform hidden dark:block"
-                        src={(item as any).imgDark}
-                        alt={item?.title}
-                      />
-                    )}
-                  </a>
-                </div>
-                {shouldShowCanvas && (
-                  <Canvas
-                    height={100}
-                    waveHeight={600}
-                    fullWidth
-                    className="absolute bottom-0 left-0 w-full z-0 opacity-20"
-                  />
-                )}
-              </div>
-            );
-          }
-          return (
-            <div
-              className={`flex flex-wrap flex-col-reverse sm:flex-row relative mb-16`}
-              key={index}
-            >
-              <div className={`w-full sm:w-1/2 p-6 relative z-10 flex justify-center items-center`}>
-                <a href={`/products/${item.slug}`} className="block mx-auto">
-                  <img
-                    className={`max-h-64 sm:max-h-full object-contain mx-auto cursor-pointer hover:scale-105 transition-transform${(item as any).imgDark ? ' dark:hidden' : ''}`}
-                    src={item?.img}
-                    alt={item?.title}
-                  />
-                  {(item as any).imgDark && (
-                    <img
-                      className="max-h-64 sm:max-h-full object-contain mx-auto cursor-pointer hover:scale-105 transition-transform hidden dark:block"
-                      src={(item as any).imgDark}
-                      alt={item?.title}
-                    />
-                  )}
-                </a>
-              </div>
-              <div className={`w-full sm:w-1/2 p-6 mt-5 relative z-10 flex flex-col justify-center items-center sm:items-start text-center sm:text-left`}>
-                <h3
-                  className={`text-3xl text-gray-800 dark:text-gray-100 font-bold leading-none mb-3`}
-                >
-                  {item?.title}
-                </h3>
-                <p className={`text-gray-600 dark:text-gray-300 mb-4`}>{item?.description}</p>
-                <a
-                  href={`/products/${item.slug}`}
-                  className="text-primary font-bold hover:text-secondary transition-colors"
-                >
-                  Learn More &rarr;
-                </a>
-              </div>
-              {shouldShowCanvas && (
-                <Canvas
-                  height={100}
-                  waveHeight={600}
-                  fullWidth
-                  className="absolute bottom-0 left-0 w-full z-0 opacity-20"
-                />
-              )}
-            </div>
-          );
-        })}
+
+        <div className="mt-20">
+          {product.items.map((item, index) => (
+            <ProductCard key={item.slug} item={item} index={index} />
+          ))}
+        </div>
       </div>
     </section>
   );

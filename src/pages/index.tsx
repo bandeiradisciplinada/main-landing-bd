@@ -1,4 +1,4 @@
-import About from '../components/About';
+import Footer from '../components/Footer';
 import Canvas from '../components/Canvas';
 import Features from '../components/Features';
 import Header from '../components/Header';
@@ -9,42 +9,43 @@ import Product from '../components/Product';
 
 const App = () => {
   return (
-    <div className={`grid gap-y-16 overflow-hidden`}>
-      <div className={`relative`}>
-        <div className="max-w-7xl mx-auto">
-          <div
-            className={`relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
-          >
-            <Header />
-            <MainHero />
+    <>
+      <Header />
+      <div className={`grid gap-y-16 overflow-hidden`}>
+        <div className={`relative`}>
+          <div className="max-w-7xl mx-auto">
+            <div
+              className={`relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
+            >
+              <MainHero />
+            </div>
           </div>
+          <MainHeroImage />
+          <Canvas
+            height={90}
+            waveHeight={600}
+            className="absolute bottom-0 w-full z-0 transform"
+          />
         </div>
-        <MainHeroImage />
-        <Canvas
-          height={90}
-          waveHeight={600}
-          className="absolute bottom-0 w-full z-0 transform"
-        />
-      </div>
-      <LazyShow>
-        <>
-          <Product />
-          <Canvas height={100} />
-        </>
-      </LazyShow>
-      <LazyShow>
-        <Features />
-      </LazyShow>
-      {/* <LazyShow>
+        <LazyShow>
+          <>
+            <Product />
+            <Canvas height={100} />
+          </>
+        </LazyShow>
+        <LazyShow>
+          <Features />
+        </LazyShow>
+        {/* <LazyShow>
         <Pricing />
       </LazyShow> */}
-      <LazyShow>
-        <>
-          <About />
-          <Canvas />
-        </>
-      </LazyShow>
-    </div>
+        <LazyShow>
+          <>
+            <Footer />
+          </>
+        </LazyShow>
+      </div>
+    </>
   );
 };
 

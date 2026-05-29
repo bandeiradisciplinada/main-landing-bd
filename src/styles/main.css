@@ -1,10 +1,10 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-primary: #9f4ffe;
-  --color-secondary: #5301b4;
-  --color-tertiary: #99a0a3;
-  --color-border: #1a2e35;
+  --color-primary: #8b5cf6;
+  --color-secondary: #c084fc;
+  --color-tertiary: #a1a1aa;
+  --color-border: #27272a;
   --color-background: #ffffff;
   
   --animate-vote: vote 1s ease-in-out;
@@ -24,7 +24,7 @@
 
 @layer base {
   body {
-    @apply bg-background dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+    @apply bg-background dark:bg-[#09090b] text-gray-900 dark:text-gray-100 font-sans antialiased selection:bg-[#8b5cf6]/30;
   }
 
   a {
@@ -32,12 +32,20 @@
     line-height: 1.5rem;
     font-weight: 500;
     color: var(--color-primary);
-    transition: border-color 0.2s;
+    transition: color 0.2s, border-color 0.2s;
   }
 
   a:hover {
-    border-bottom: 2px solid #b91c1c; /* red-700 equivalent */
+    color: var(--color-secondary);
   }
+}
+
+.glass {
+  @apply backdrop-blur-md bg-white/70 dark:bg-[#09090b]/70 border-b border-gray-200 dark:border-white/10;
+}
+
+.glass-card {
+  @apply backdrop-blur-lg bg-white/50 dark:bg-white/5 border border-white/20 dark:border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.12)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.3)];
 }
 
 .space-box {
